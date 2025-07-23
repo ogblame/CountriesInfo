@@ -1,0 +1,27 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 407px 1fr; /* Фильтр слева 300px, остальное - контент */
+    grid-template-rows: auto 1fr; /* Поиск сверху, контент снизу */
+    grid-template-areas:
+        "filter search"
+        "filter content";
+    gap: 20px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.filterArea {
+    grid-area: filter;
+}
+
+.searchArea {
+    grid-area: search;
+}
+
+.contentArea {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-content: start;
+}

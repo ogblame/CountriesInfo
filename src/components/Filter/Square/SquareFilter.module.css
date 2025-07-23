@@ -1,0 +1,17 @@
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.inputStyle {
+    width: 100px;
+    height: 23px;
+    border-radius: 16px;
+    border: 1px solid #D2D2D2;
+    padding: 12px 16px 12px 16px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
