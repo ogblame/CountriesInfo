@@ -1,0 +1,53 @@
+
+.customSlider {
+    -webkit-appearance: none;
+    width: 309px;
+    height: 3px; /* Изменил с 0px для видимости трека */
+    border: none; /* Убрал border, так как используем градиент */
+    background: linear-gradient(to right,
+    black 0%,
+    black var(--fill, 0%),
+    #D2D2D2 var(--fill, 0%),
+    #D2D2D2 100%);
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.inputText {
+    width: 293px;
+    height: 34px;
+    border: 1px solid #000000;
+    border-radius: 16px;
+    margin-top:  8px;
+    padding: 12px 16px;
+    font-size: 18px;
+}
+
+/* Стили для ползунка (сделаем его черным) */
+.customSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #000000; /* Черный ползунок */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Для Firefox */
+.customSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.slider-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D2D2D2; /* Черный текст */
+    text-align: center;
+}
